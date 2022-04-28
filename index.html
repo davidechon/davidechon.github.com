@@ -19,7 +19,7 @@
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
   <!-- Css Style -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Vue Boolzapp</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
           <div class="row header">
             <div class="nav align-items-center">
                 <div>
-                  <img class="avatar" src="img/avatar_io.png" alt="Davide"> Davide
+                  <img class="avatar" src="../img/avatar_io.png" alt="Davide"> Davide
                 </div>
                 <div class="justify-content-end">
                   <i class="icons icon-size fa-solid fa-circle-notch"></i>
@@ -69,7 +69,7 @@
                v-if="contact.visible"
               >
               
-                <img class="avatar" :src="'img/avatar' + contact.avatar + '.jpg'" :alt="'Avatar di ' + contact.name">
+                <img class="avatar" :src="'../img/avatar' + contact.avatar + '.jpg'" :alt="'Avatar di ' + contact.name">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">{{contact.name}}</div>
                   <span class="subtitle">{{noMessage(contact)}}
@@ -78,7 +78,7 @@
                 <span class="hours">{{noDate(contact)}}</span>
               </li>
               <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_1.jpg" alt="MIchele">
+                <img class="avatar" src="../img/avatar_1.jpg" alt="MIchele">
                 <div class="ms-2 me-auto">
                   <div :class="userTitle">Michele</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -86,7 +86,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_2.jpg" alt="Fabio">
+                <img class="avatar" src="../img/avatar_2.jpg" alt="Fabio">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Fabio</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -94,7 +94,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_3.jpg" alt="Samuele">
+                <img class="avatar" src="../img/avatar_3.jpg" alt="Samuele">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Samuele</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -102,7 +102,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_4.jpg" alt="Alessandro B.">
+                <img class="avatar" src="../img/avatar_4.jpg" alt="Alessandro B.">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Alessandro B.</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -110,7 +110,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_5.jpg" alt="Alessandro L.">
+                <img class="avatar" src="../img/avatar_5.jpg" alt="Alessandro L.">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Alessandro L.</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -118,7 +118,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_6.jpg" alt="Claudia">
+                <img class="avatar" src="../img/avatar_6.jpg" alt="Claudia">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Claudia</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -126,7 +126,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_7.jpg" alt="Federico">
+                <img class="avatar" src="../img/avatar_7.jpg" alt="Federico">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Federico</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -134,7 +134,7 @@
                 <span class="hours">12:00</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <img class="avatar" src="img/avatar_8.jpg" alt="Davide">
+                <img class="avatar" src="../img/avatar_8.jpg" alt="Davide">
                 <div class="ms-2 me-auto">
                   <div class="userTitle">Davide</div>
                   <span class="subtitle"></span>Ultimo messaggio inviato</span>
@@ -149,7 +149,7 @@
           <div class="row header">
             <div class="nav align-items-center">
               <div class="d-flex justify-content-between align-items-center">
-                <img :src="'./img/avatar' + contacts[activeContactIndex].avatar + '.jpg'" class="avatar" :alt="contacts[activeContactIndex].name"> 
+                <img :src="'../img/avatar' + contacts[activeContactIndex].avatar + '.jpg'" class="avatar" :alt="contacts[activeContactIndex].name"> 
                   <div class="userTitle px-2">{{contacts[activeContactIndex].name}}</br>
                     <!-- <span class="subtitle">Ultimo accesso oggi alle 12:00</span> -->
                     <span class="subtitle">Ultimo accesso: {{noDate(contacts[activeContactIndex])}}</span>
@@ -255,6 +255,6 @@
   
 
 
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
